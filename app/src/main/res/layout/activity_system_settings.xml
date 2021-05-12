@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SystemSettings">
+
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:fontFamily="sans-serif"
+            android:text="System Settings"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_cancel_white_60dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_panel"
+        android:id="@+id/heading"
+        android:text="Select conditions to open the cash drawer"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_margin="16sp"
+        android:padding="5px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:orientation="horizontal"
+        android:id="@+id/heading1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash not paid"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:id="@+id/cashunpaidheading"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cashnotpaidradio"
+            android:layout_below="@+id/heading"
+            android:orientation="horizontal"
+            android:checkedButton="@id/cashnottrue">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cashnottrue"
+                android:text="Yes"
+                android:layout_margin="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cashnotfalse"
+                android:text="No"
+                android:layout_margin="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading1"
+        android:orientation="horizontal"
+        android:id="@+id/heading2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash Paid"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:id="@+id/cashpaidheading"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cashpaidradio"
+            android:orientation="horizontal"
+            android:checkedButton="@id/cashtrue">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cashtrue"
+                android:text="Yes"
+                android:layout_margin="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cashfalse"
+                android:text="No"
+                android:layout_margin="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading2"
+        android:orientation="horizontal"
+        android:id="@+id/heading3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card not paid"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:id="@+id/cardunpaidheading"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardnotpaidradio"
+            android:orientation="horizontal"
+            android:checkedButton="@id/cardnottrue">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardnottrue"
+                android:text="Yes"
+                android:layout_margin="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardnotfalse"
+                android:text="No"
+                android:layout_margin="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading3"
+        android:orientation="horizontal"
+        android:id="@+id/heading4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card paid"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:id="@+id/cardpaidheading"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardpaidradio"
+            android:orientation="horizontal"
+            android:checkedButton="@id/cardtrue">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardtrue"
+                android:text="Yes"
+                android:layout_margin="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardfalse"
+                android:text="No"
+                android:layout_margin="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading4"
+        android:orientation="horizontal"
+        android:id="@+id/heading5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Item Print Setting"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:id="@+id/itemmenudheading"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemmenuRadio"
+            android:layout_below="@+id/heading4"
+            android:orientation="horizontal"
+            android:checkedButton="@id/itemmenuRadio1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemmenuRadio1"
+                android:text="L"
+                android:layout_margin="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemmenuRadio2"
+                android:text="R"
+                android:layout_margin="10dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemmenuRadio3"
+                android:text="N"
+                android:layout_margin="10dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

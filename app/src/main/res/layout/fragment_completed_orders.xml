@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/filter_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="0.1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:inputType="none"
+                android:editable="false"
+                android:focusable="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="5dp"
+                android:background="@drawable/rectangular_shape"
+                android:id="@+id/fromDate"
+                android:hint="From Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="none"
+                android:editable="false"
+                android:focusable="false"
+                app:layout_constraintStart_toEndOf="@id/fromDate"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp"
+                android:padding="5dp"
+                android:background="@drawable/rectangular_shape"
+                android:id="@+id/toDate"
+                android:hint="To Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/go"
+                android:text="Go"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        app:layout_constraintTop_toBottomOf="@id/filter_container"
+        app:layout_constraintBottom_toTopOf="@id/completedOrdersRV"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="0.1"
+        android:layout_height="0dp">
+
+        <include layout="@layout/completed_orders_header_layout" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/headerContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/completed_orders_layout"
+        android:layout_marginBottom="@dimen/padd_10"
+        android:id="@+id/completedOrdersRV"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_weight="0.8"
+        android:layout_height="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

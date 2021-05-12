@@ -1,0 +1,83 @@
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- <EditText
+         android:id="@+id/edit"
+         app:layout_constraintTop_toTopOf="parent"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+     <com.foodciti.foodcitipartener.keyboards.PrimaryKeyboard
+         app:layout_constraintTop_toBottomOf="@id/edit"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:id="@+id/keyboard"
+         android:orientation="vertical"
+         app:textsize="@dimen/text_extra_large"
+         android:layout_width="match_parent"
+         android:layout_height="0dp" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clickable="false"
+        android:background="@drawable/rectangular_shape"
+        android:id="@+id/left_pane"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mid_pane"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="0.33"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/pan_tool_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_pan_tool_black_60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clickable="false"
+        android:background="@drawable/rectangular_shape"
+        android:id="@+id/mid_pane"
+        app:layout_constraintStart_toEndOf="@id/left_pane"
+        app:layout_constraintEnd_toStartOf="@id/right_pane"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="0.33"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/pan_tool_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_pan_tool_black_60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clickable="false"
+        android:background="@drawable/rectangular_shape"
+        android:id="@+id/right_pane"
+        app:layout_constraintStart_toEndOf="@id/mid_pane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="0.33"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/pan_tool_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_pan_tool_black_60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

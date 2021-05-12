@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/category_tab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/category_tab_text_color"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_above="@+id/tab_indicator" />
+
+    <View
+        android:id="@+id/tab_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/colorDanube"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        android:layout_alignLeft="@id/category_tab_name"
+        android:layout_alignRight="@id/category_tab_name"/>
+
+    <View
+        android:id="@+id/tab_separator"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorAlto"
+        android:layout_above="@id/tab_indicator"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        
+        android:layout_toEndOf="@id/category_tab_name" />
+</RelativeLayout>

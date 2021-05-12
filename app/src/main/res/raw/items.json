@@ -1,0 +1,508 @@
+﻿[
+  {
+    "id": "0",
+    "name": "Medium Lamb Doner",
+    "price": "5.8",
+    "flavours": [
+      {
+        "itemFlavourName": "flavour 1",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 2",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 3",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 4",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 5",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 6",
+        "itemFlavourPrice": "5.8"
+      }
+    ]
+  },
+  {
+    "id": "0",
+    "name": "Large Chicken Doner",
+    "price": "6.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Medium Chicken Doner",
+    "price": "5.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Large Chicken Shish",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Medium Kofte",
+    "price": "5.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Large Kofte",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Mix Doner",
+    "price": "7.7",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Mixed Kebab",
+    "price": "9.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Efes Grill",
+    "price": "11.4",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "House Special",
+    "price": "14.4",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Special Shish",
+    "price": "8.2",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Chicken & Chips",
+    "price": "6.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Lamb Doner & Chips",
+    "price": "6.7",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Mix Meat & Chips",
+    "price": "6.9",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Lamb Doner Wrap",
+    "price": "5.7",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Chicken Doner Wrap",
+    "price": "5.7",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Lamb Doner Roll",
+    "price": "4.2",
+    "flavours": []
+  },
+  {
+    "id": "0",
+    "name": "Chicken Donor Roll",
+    "price": "4.2",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Lamb Doner & Lamb Shish",
+    "price": "7.9",
+    "flavours": [
+      {
+        "itemFlavourName": "flavour 1",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 2",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 3",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 4",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 5",
+        "itemFlavourPrice": "5.8"
+      },
+      {
+        "itemFlavourName": "flavour 6",
+        "itemFlavourPrice": "5.8"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Lamb Doner & Chicken Shish",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Lamb Doner & Kofte",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Chicken Doner & Lamb Shish",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Chicken Doner & Chicken Shish",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Chicken Doner & Kofte",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Lamb Shish & Kofte",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Chicken Shish & Kofte",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "1",
+    "name": "Chicken Shish & Lamb Shish",
+    "price": "7.9",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Medium Chips",
+    "price": "2",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Large Chips",
+    "price": "2.2",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Humus in Pot",
+    "price": "2.4",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Fresh Salad in Pita",
+    "price": "2.7",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Halloumi in Pita with Salad",
+    "price": "3.8",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Chips in Pita",
+    "price": "2.9",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Chips in Pita with Cheese",
+    "price": "3.7",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Onion Ring",
+    "price": "3.2",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Potato Wedges",
+    "price": "3.8",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Chips and Cheese",
+    "price": "3.2",
+    "flavours": []
+  },
+  {
+    "id": "2",
+    "name": "Side Salad",
+    "price": "0.8",
+    "flavours": []
+  },
+  {
+    "id": "3",
+    "name": "6 Spicy Wings",
+    "price": "2.9",
+    "flavours": []
+  },
+  {
+    "id": "3",
+    "name": "10 Spicy Wings",
+    "price": "4.6",
+    "flavours": []
+  },
+  {
+    "id": "3",
+    "name": "15 Spicy Wings",
+    "price": "6.6",
+    "flavours": []
+  },
+  {
+    "id": "3",
+    "name": "6 BBQ Wings",
+    "price": "2.9",
+    "flavours": []
+  },
+  {
+    "id": "3",
+    "name": "10 BBQ Wings",
+    "price": "4.6",
+    "flavours": []
+  },
+  {
+    "id": "3",
+    "name": "15 BBQ Wings",
+    "price": "6.6",
+    "flavours": []
+  },
+  {
+    "id": "3",
+    "name": "8 Chicken Nuggets & Chips",
+    "price": "4.9",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Cheese Burger (Kids)",
+    "price": "4.9",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Lamb Doner & Chips (Kids)",
+    "price": "4.9",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Chicken Doner & Chips (Kids)",
+    "price": "4.9",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "4 Chicken Nuggets (Kids)",
+    "price": "4.9",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Fish Burger (Kids)",
+    "price": "4.9",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Coke",
+    "price": "0",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Diet Coke",
+    "price": "0",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Apple Tango",
+    "price": "0",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Orange Tango",
+    "price": "0",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "7up",
+    "price": "0",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Ribena",
+    "price": "0",
+    "flavours": []
+  },
+  {
+    "id": "4",
+    "name": "Water",
+    "price": "0",
+    "flavours": []
+  },
+  {
+    "id": "5",
+    "name": "Offer 1",
+    "price": "6.4",
+    "flavours": []
+  },
+  {
+    "id": "5",
+    "name": "Offer 2",
+    "price": "5.9",
+    "flavours": []
+  },
+  {
+    "id": "5",
+    "name": "Offer 3",
+    "price": "5.2",
+    "flavours": []
+  },
+  {
+    "id": "5",
+    "name": "Offer 4",
+    "price": "6.6",
+    "flavours": []
+  },
+  {
+    "id": "5",
+    "name": "Offer 5",
+    "price": "15.7",
+    "flavours": []
+  },
+  {
+    "id": "5",
+    "name": "Offer 6",
+    "price": "5.2",
+    "flavours": []
+  },
+  {
+    "id": "6",
+    "name": "Cheese Burger Meal",
+    "price": "5.9",
+    "flavours": []
+  },
+  {
+    "id": "6",
+    "name": "� Cheese Burger Meal",
+    "price": "7.3",
+    "flavours": []
+  },
+  {
+    "id": "6",
+    "name": "Veg Burger Meal",
+    "price": "5.4",
+    "flavours": []
+  },
+  {
+    "id": "6",
+    "name": "Lamb Doner & Chips Meal",
+    "price": "7.2",
+    "flavours": []
+  },
+  {
+    "id": "6",
+    "name": "Chicken Doner & Chips Meal",
+    "price": "7.2",
+    "flavours": []
+  },
+  {
+    "id": "6",
+    "name": "Mix Doner & Chips Meal",
+    "price": "7.5",
+    "flavours": []
+  },
+  {
+    "id": "7",
+    "name": "� Pounder",
+    "price": "3.6",
+    "flavours": []
+  },
+  {
+    "id": "7",
+    "name": "� Pounder with Cheese",
+    "price": "3.8",
+    "flavours": []
+  },
+  {
+    "id": "7",
+    "name": "� Pounder",
+    "price": "4.9",
+    "flavours": []
+  },
+  {
+    "id": "7",
+    "name": "� Pounder with Cheese",
+    "price": "5.2",
+    "flavours": []
+  },
+  {
+    "id": "7",
+    "name": "Fresh Chicken Fillet Burger",
+    "price": "4.3",
+    "flavours": []
+  },
+  {
+    "id": "7",
+    "name": "Veg Burger",
+    "price": "3.5",
+    "flavours": []
+  },
+  {
+    "id": "7",
+    "name": "Fish Burger",
+    "price": "3.3",
+    "flavours": []
+  }
+]

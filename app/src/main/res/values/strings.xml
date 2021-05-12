@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_internet_connection_warning">Please check your internet connection</string>
+
+    <!--    <string name="provider">Efes Kebab</string>
+    <string name="app_name">Foodciti Epos</string>
+    <string name="vendor">Efes Kebab &amp; Pizza House</string>
+    <string name="tel_no">01227 766 966</string>
+    <string name="pin">CT1 1BL</string>
+    <string name="location">36 Northgate,Canterbury</string>-->
+
+
+    <!--  <string name="provider">CURRY KASHMIR LTD</string>
+      <string name="app_name">Foodciti Epos</string>
+      <string name="vendor">T/A Kashmir Tandoori</string>
+      <string name="location">20 Palace Street,Canterbury</string>
+      <string name="tel_no">01227 462050</string>
+      <string name="pin">CT1 2DZ</string>
+      <string name="email">kashmirtandoori1966@gmail.com</string>
+      <string name="website">www.kashmirtandoori.co.uk</string>
+      <string name="vat_no">297 1285 68</string>-->
+
+    <!--    <string name="provider">Kashmir Tandoori</string>
+    <string name="app_name">Foodciti Epos</string>
+    <string name="vendor">Only1KASHMIR LTD \n T/A Kashmir Tandoori</string>
+    <string name="location">20 Palace Street,Canterbury Kent</string>
+    <string name="tel_no">01227 462050</string>
+    <string name="pin">CT1 2DZ</string>
+    <string name="email">kashmirtandoori1966@gmail.com</string>
+    <string name="website">www.kashmirtandoori.co.uk</string>
+    <string name="vat_no">342 3062 38</string>-->
+
+    <!--    <string name="provider">FoodCiti</string>
+    <string name="app_name">Foodciti Epos</string>
+    <string name="vendor">Masala Gate</string>
+    <string name="tel_no">01227 462906</string>
+    <string name="pin">CT12DZ</string>
+    <string name="location">34 Northgate,Canterbury</string>-->
+
+    <!--    <string name="provider">FoodCiti</string>
+    <string name="app_name">Foodciti Epos</string>
+    <string name="vendor">Canterbury Grill Kebab</string>
+    <string name="tel_no">01227 765458</string>
+    <string name="pin">CT12PY</string>
+    <string name="location">66 Castle St, Canterbury</string>-->
+    <string name="monday">Monday</string>
+    <string name="start_time_1">Start Time 1</string>
+    <string name="start_time_2">Start Time 2</string>
+    <string name="close_time_1">Close Time 1</string>
+    <string name="close_time_2">Close Time 2</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="paypal_accepted">Paypal Accepted</string>
+    <string name="pay_by_cash">Pay by Cash</string>
+    <string name="pay_by_card_delivery">Pay by Card (Delivery)</string>
+    <string name="pay_by_card_collection">Pay by Card (Collection)</string>
+    <string name="ok">ok</string>
+    <string name="end_of_the_day">End Of The Day</string>
+    <string name="submit">Submit</string>
+    <string name="print_text_size">Print Text Size</string>
+    <string name="number_of_printing_copy">Number Of Printing Copy</string>
+    <string name="regular">Regular</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="send_back" translatable="false">SEND BACK</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="order_items">Order Items</string>
+    <string name="ordered_by">Ordered By</string>
+    <string name="status">Status</string>
+    <string name="accept_order">Accept Order</string>
+    <string name="decline_order">Decline Order</string>
+    <string name="forward">Forward</string>
+    <string name="forward_order">Forward Order</string>
+    <string name="dotted_text">-----------------------------------------------------------------------</string>
+    <string name="customnotificationticker">Foodciti</string>
+    <string name="provider">Gurkha Palace</string>
+    <string name="app_name">Foodciti</string>
+    <string name="vendor">Gurkha Palace Kent LTD \n T/A Gurkkha Palace</string>
+    <string name="location">97 Enbrook Valley, Folkestone</string>
+    <string name="tel_no">0130 3257700</string>
+    <string name="pin">CT20 3NE</string>
+    <string name="vat_no">205 2516 48</string>
+
+
+    <string name="btn_PD_USB_str">USB Customer display test</string>
+    <string name="Btn_PD_S_str">Serial Customer display test</string>
+    <string name="Btn_RP_S_str">Printer test</string>
+    <string name="Btn_LED_str">LED test</string>
+    <string name="str_HideNavibar">Hide navigationbar</string>
+    <string name="str_DisplayNavibar">Display navigationbar</string>
+    <string name="Btn_Quit_str">Quit</string>
+    <string name="action_settings">Setting</string>
+    <string name="str_datareception">Reception</string>
+    <string name="str_DigitalClock">DigitalClock</string>
+
+    <string name="title_activity_usbpd">USB Customer display test</string>
+    <string name="USBPDCmdTitle">Command Select:</string>
+    <string name="str_BtnPDSendData">Send</string>
+    <string name="str_BtnPDSetTime">Set time for Customer display</string>
+
+    <string name="str_QRtext">QR text</string>
+    <string name="str_SendQRtext">Send QR text</string>
+
+    <string name="USBEnumFinishText">Customer display numerate succeed！\n</string>
+    <string name="USBEnumFailText">Customer display enumerate failure！\n</string>
+    <string name="InterfaceFinishText">Find the interface！\n</string>
+    <string name="InterfaceFailText">Can not find the interface！\n</string>
+    <string name="OpenFinishText">Open interface succeed！\n</string>
+    <string name="OpenFailText">Open interface failure！\n</string>
+    <string name="USBPDFinishText">Now,you can send data to the Customer display！\n</string>
+    <string name="USBPDFailText">Please return to the main page and come in again！\n</string>
+
+    <string name="title_activity_serial_pd">Serial Customer display test</string>
+
+    <string name="BtnSerialPDSendData">Send test data</string>
+
+    <string name="error_configuration">Please configure your serial port first.</string>
+
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+    <string name="title_activity_serial_rp">Printer test</string>
+    <string name="str_getstatus">Real-time status transmission</string>
+    <string name="btnPrinttest">Print self test</string>
+    <string name="btnPrintdemo">Print demo</string>
+
+    <string name="btnOpenPicture">Open picture</string>
+    <string name="btnPrintPicture">Print picture</string>
+    <string name="strImageForPrint">Picture for print</string>
+    <string name="strFileDialogItem">Picture for path</string>
+    <string name="str_setCP">Set Codepage</string>
+    <string name="str_setCS">Set Character Set</string>
+    <string name="str_EnableChinese">Enable Chinese Mode</string>
+    <string name="str_DisableChinese">Disable Chinese Mode</string>
+    <string name="title_activity_ledtest">LEDTest</string>
+
+    <string name="btnstr_redOn">Red LED on</string>
+    <string name="btnstr_redOff">Red LED off</string>
+
+
+    <!--     <string name="sendEmissionData">SendData</string>
+    <string name="Emission">Enter Arabic!</string> -->
+
+    <!--
+         <string name="btnPrintGetID">获取ID信息</string>
+    <string name="btnPrintSetID">设置打印机ID</string>
+    <string name="PrinterID">CTE-RP58 V1.0</string>
+    -->
+
+    <string name="btnstr_blueOn">Blue LED on</string>
+    <string name="btnstr_blueOff">Blue LED off</string>
+    <string name="btnstr_freshOn">Fresh on</string>
+    <string name="btnstr_freshOff">Fresh off</string>
+    <string name="listening">listening</string>
+    <string name="calltime">Call time</string>
+    <string name="displaycalltime">Display Call time</string>
+
+
+    <string name="callerID">Caller ID</string>
+    <string name="displaycallnumber">Display call number</string>
+    <string name="exit">Exit</string>
+    <string name="failed">Initialization failed, cannot listen!</string>
+    <string name="send">Check Caller ID board.</string>
+    <string name="clear">Reset Caller ID board.</string>
+    <string name="single">single</string>
+
+
+    <string name="auto">auto</string>
+    <string name="some_error">Error</string>
+
+    <string name="delete_icon">Delete button</string>
+    <string name="save">SAVE</string>
+
+    <string name="post_code">Post Code</string>
+    <string name="telephone">Telephone</string>
+    <string name="house_no_name">House No/Name</string>
+    <string name="street">Street</string>
+    <string name="city">Address</string>
+    <string name="remark">Remark</string>
+    <string name="setting_button">Setting button</string>
+    <string name="btn_menu_screen_home">Home</string>
+    <string name="clear_order">Clear Order</string>
+    <string name="order_history">Orders</string>
+    <string name="order_online">Online Orders</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="special_note">Special Note</string>
+    <string name="total">TOTAL :</string>
+    <string name="open_cash_drawer">Open Cash Drawer</string>
+    <string name="reports">Reports</string>
+    <string name="extra_discount">Extra / Discount</string>
+    <string name="add_category">+ Add Category</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="extra">Extra</string>
+    <string name="defaultText">  Select your Company  </string>
+    <string name="discount">Discount</string>
+    <string name="collection">Collection</string>
+    <string name="special_notes">Special Notes</string>
+    <string name="customerAddress">Address</string>
+    <string name="house">House</string>
+    <string name="mobile">Mobile</string>
+    <string name="update">Update</string>
+    <string name="add">Add</string>
+    <string name="pound_symbol">\u00A3</string>
+    <string name="option_hint">\u25BC</string>
+    <string name="current_date_format">dd-MM-yyyy\nHH:mm:ss</string>
+    <string name="backup_file_date_format">dd-MM-yyyy</string>
+
+    <string name="dummy_mobile">NA</string>
+
+    <string name="dummy_address">NA</string>
+    <string name="dummy_ordertype">NA</string>
+
+    <string name="appwidget_text">CounterBox</string>
+
+    <string name="add_widget">Add widget</string>
+    <!--<string name="dummy_mobile">mobile</string>
+    <string name="dummy_address">address</string>
+    <string name="dummy_ordertype">orderType</string> -->
+
+    <string name="double_qotes">\"</string>
+    <string name="single_qoute">\'</string>
+    <string name="am_persand">&amp;</string>
+    <string name="at_rate">	\@</string>
+    <string name="ques_mark">\?</string>
+    <string name="less_than">&lt;</string>
+    <string name="greater_than">&gt;</string>
+    <string name="double_quote">&quot;</string>
+
+    <string name="percent_mark">%</string>
+    <string name="pound_percent">\u00A3/%</string>
+    <string name="text_msg_after_order">Text message after every order</string>
+    <string name="title_activity_manage_users">ManageUsersActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="PD_cmd">
+        <item>ESC Q A 11111111 CR\n Digital display 11111111</item>
+        <item>ESC Q A 12345678 CR\n Digital display 12345678</item>
+        <item>ESC Q A 87654321 CR\n Digital display 87654321</item>
+        <item>ESC Q A 90123456 CR\n Digital display 90123456</item>
+        <!--
+             <item>ESC s 1\n 显示单价</item>
+        <item>ESC s 2\n 显示总计</item>
+        <item>ESC s 3\n 显示收款</item>
+        <item>ESC s 4\n 显示找零</item>
+        <item>ESC s 0\n 清除状态栏显示</item>
+        -->
+    </string-array>
+    <string-array name="Codepage">
+        <item>page  0 (PC437:Standard-Europe)</item>
+        <item>page  1 (Katakana)</item>
+        <item>page  2 (PC850:Multilingual)</item>
+        <item>page  3 (PC860:Portuguese)</item>
+        <item>page  4 (PC863:Canadian-French)</item>
+        <item>page  5 (PC865:Nordic)</item>
+        <item>page  8 (Hebrew)</item>
+        <item>page 13 (PC857:Turkish)</item>
+        <item>page 14 (PC737:Greek)</item>
+        <item>page 15 (PC928:Greek)</item>
+        <item>page 16 (WPC1252)</item>
+        <item>page 17 (PC866:Cyrillic#2)</item>
+        <item>page 18 (PC852:Latin2)</item>
+        <item>page 19 (PC858)</item>
+        <item>page 33 (WPC775:Baltic Rim)</item>
+        <item>page 34 (PC855:Cyrillic)</item>
+        <item>page 36 (PC862:Hebrew)</item>
+        <item>page 37 (PC864:Arabic)</item>
+        <item>page 46 (WPC1251:Cyrillic)</item>
+        <item>page 47 (WPC1253:Greek)</item>
+        <item>page 48 (WPC1254:Turkish)</item>
+        <item>page 49 (WPC1255:Hebrew)</item>
+        <item>page 50 (WPC1256:Arabic)</item>
+        <item>page 51 (WPC1257:Baltic Rim)</item>
+    </string-array>
+
+    <string-array name="CharacterSet">
+        <item> 0：U.S.A.</item>
+        <item> 1：France</item>
+        <item> 2：Germany</item>
+        <item> 3：U.K.</item>
+        <item> 4：Denmark I</item>
+        <item> 5：Sweden</item>
+        <item> 6：Italy</item>
+        <item> 7：Spain I</item>
+        <item> 8：Japan</item>
+        <item> 9：Norway</item>
+        <item>10：Denmark II</item>
+        <item>11：Spain II</item>
+        <item>12：Latin America</item>
+        <item>13：Korea</item>
+        <item>14：Slovenia</item>
+    </string-array>
+    <string-array name="reasons_array">
+        <item>Normal</item>
+        <item>Payment Issue</item>
+        <item>Wrong Order</item>
+        <item>Got Gift</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="color_string">
+        <item>Blue|#0080ff</item>
+        <item>Navy Blue|#003366</item>
+        <item>Light Brown|#685858</item>
+        <item>Dark Green|#004225</item>
+        <item>Red|#d40000</item>
+        <item>Light Gray|#aaaaaa</item>
+        <item>Dark Gray|#242533</item>
+        <item>Brown|#b0714f</item>
+        <item>Turqoise Blue|#0097A7</item>
+    </string-array>
+
+    <string name="ten_pounds">\u00A3 10</string>
+    <string name="twenty_pounds">\u00A3 20</string>
+    <string name="thirty_pounds">\u00A3 30</string>
+    <string name="forty_pounds">\u00A3 40</string>
+    <string name="fifty_pounds">\u00A3 50</string>
+    <string name="sixty_pounds">\u00A3 60</string>
+</resources>

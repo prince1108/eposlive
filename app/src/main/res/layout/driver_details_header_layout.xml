@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/colorVividTangerine"
+    android:elevation="5dp"
+    android:outlineAmbientShadowColor="@color/coloGray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/rectangular_border_sharp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- <TextView
+             android:text="Image"
+             android:textSize="@dimen/text_small"
+             android:textStyle="bold"
+             android:padding="16dp"
+             android:layout_width="0dp"
+             android:layout_weight="0.1"
+             android:layout_height="wrap_content"/>
+         <View
+             android:background="@color/colorBlack"
+             android:layout_width="1dp"
+             android:layout_height="match_parent"/>-->
+        <TextView
+            android:padding="16dp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/colorBlack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:padding="16dp"
+            android:text="Vehicle No"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/colorBlack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:padding="16dp"
+            android:text="Date Registered"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/colorBlack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="Enable/Disable"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.05"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/colorBlack"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="Edit/Delete"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

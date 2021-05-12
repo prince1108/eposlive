@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="view_padding_20">20dp</dimen>
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="ic_delete">20dp</dimen>
+    <dimen name="thumbnail">90dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="px1">1px</dimen>
+    <dimen name="px2">2px</dimen>
+    <dimen name="px4">4px</dimen>
+
+    <dimen name="recycleview_item_spacing_20">20px</dimen>
+    <dimen name="recycleview_item_spacing_30">30px</dimen>
+
+    <dimen name="text_extra_large">35sp</dimen>
+    <dimen name="text_extra_large3">28sp</dimen>
+    <dimen name="text_extra_large2">25sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">19sp</dimen>
+    <dimen name="text_small">18sp</dimen>
+    <dimen name="text_very_small">14sp</dimen>
+    <dimen name="subitem_padding">30dp</dimen>
+
+    <dimen name="icon_small">20sp</dimen>
+    <dimen name="icon_medium">25sp</dimen>
+    <dimen name="icon_large">30sp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

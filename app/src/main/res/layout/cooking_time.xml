@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_cross_onblack" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/time_dialog_background"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/fifteen"
+                android:layout_width="130dp"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:text="15 min"
+                    android:gravity="center_horizontal"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlackCurrent3B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/three_0"
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/fifteen"
+                android:layout_width="130dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="30 min"
+                    android:textColor="@color/colorBlackCurrent3B"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/four_5"
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/three_0"
+                android:layout_width="130dp"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:text="45 min"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlackCurrent3B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/moneylayout"
+            android:layout_below="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@drawable/time_dialog_background"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/six_0"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="60 min"
+                        android:gravity="center_horizontal"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackCurrent3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/seven_5"
+                    android:background="@drawable/time_dialog_background"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/six_0"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="75 min"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackCurrent3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nine_0"
+                    android:background="@drawable/time_dialog_background"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/seven_5"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="90 min"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackCurrent3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/layout3"
+                android:layout_below="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@drawable/time_dialog_background"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/one_05"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="105 min"
+                        android:gravity="center_horizontal"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackCurrent3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/one_20"
+                    android:background="@drawable/time_dialog_background"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/one_05"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="120 min"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackCurrent3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/one_35"
+                    android:background="@drawable/time_dialog_background"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/one_20"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:text="135 min"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackCurrent3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:visibility="invisible" />
+</LinearLayout>

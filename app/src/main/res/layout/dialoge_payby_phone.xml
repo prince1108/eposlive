@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Payment Detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_extra_large2"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_cancel_white_60dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_panel"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/formlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false" android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/cardNumberTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Card Number"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_extra_large2"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtCardNoTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/cardNumberTxt"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangular_shape_transparent"
+                    android:drawableEnd="@drawable/lock"
+                    android:hint="Valid Card Number"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="@dimen/text_extra_large2" />
+
+                <TextView
+                    android:id="@+id/cardholderNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtCardNoTxt"
+                    android:layout_margin="8dp"
+                    android:text="CardHolder Name"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_extra_large2"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtCardHoNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/cardholderNameTxt"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangular_shape_transparent"
+                    android:drawableEnd="@drawable/user"
+                    android:hint="Card Holder Name"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="@dimen/text_extra_large2" />
+
+                <LinearLayout
+                    android:id="@+id/midRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtCardHoNameTxt"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:baselineAligned="false" android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/expMonthTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Expiry"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/text_extra_large2"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/expiryTxt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangular_shape_transparent"
+                            android:hint="MM/YY"
+                            android:inputType="phone"
+                            android:maxLength="5"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textSize="@dimen/text_large" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Security Code"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/text_extra_large2"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/cvvTxt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangular_shape_transparent"
+                            android:hint="CVV"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textSize="@dimen/text_large" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Total Amount"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/text_extra_large2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/totalAmountTxt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:gravity="left|center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangular_shape_transparent"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textSize="@dimen/text_large" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_below="@+id/midRow"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorDarkGray" />
+
+                <Button
+                    android:id="@+id/payBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/line"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/button_fade"
+                    android:text="Pay"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_extra_large2"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/bottomlogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/payBtn"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/secured_gp" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.foodciti.foodcitipartener.keyboards.NumPad
+                    android:id="@+id/numPad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangular_shape" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.foodciti.foodcitipartener.keyboards.ExtendedKeyBoard
+            android:id="@+id/keyBoard"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:keyTextSize="@dimen/text_extra_large" />
+    </LinearLayout>
+</RelativeLayout>

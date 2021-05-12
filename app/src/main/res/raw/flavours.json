@@ -1,0 +1,38 @@
+[
+  {
+    "menuCategoryId": 1,
+    "itemId": 1,
+    "itemFlavourName": "flavour 1",
+    "itemFlavourPrice": "5.8"
+  },
+  {
+    "menuCategoryId": 1,
+    "itemId": 1,
+    "itemFlavourName": "flavour 2",
+    "itemFlavourPrice": "5.8"
+  },
+  {
+    "menuCategoryId": 1,
+    "itemId": 1,
+    "itemFlavourName": "flavour 3",
+    "itemFlavourPrice": "5.8"
+  },
+  {
+    "menuCategoryId": 1,
+    "itemId": 1,
+    "itemFlavourName": "flavour 4",
+    "itemFlavourPrice": "5.8"
+  },
+  {
+    "menuCategoryId": 1,
+    "itemId": 1,
+    "itemFlavourName": "flavour 5",
+    "itemFlavourPrice": "5.8"
+  },
+  {
+    "menuCategoryId": 1,
+    "itemId": 1,
+    "itemFlavourName": "flavour 6",
+    "itemFlavourPrice": "5.8"
+  }
+]

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_panel"
+        android:padding="8dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_extra_large"
+            android:text="Delivery Summary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_cancel_white_60dp"
+            android:id="@+id/close"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/top_panel"
+        android:id="@+id/mid_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_report_date"
+            android:text="Date: "
+            android:textSize="@dimen/text_large"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/report_date"
+            android:text="NA"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_large"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_report_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:padding="8dp"
+            android:background="@drawable/dark_gray_rectangular_btn"
+            android:layout_marginRight="16dp"
+            android:id="@+id/export_csv"
+            android:text="export csv"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/ic_print_black60dp"
+            android:id="@+id/print"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/mid_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="16dp"
+            android:background="@color/dark_gray_gradientStart"
+            android:id="@+id/header_panel"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintBottom_toTopOf="@id/salesDetailsRV"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header_order_no"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/header_amount"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_large"
+                android:text="Order#"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.15"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/header_amount"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_order_no"
+                app:layout_constraintEnd_toStartOf="@id/header_customer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_large"
+                android:text="Amount"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.15"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/header_customer"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_amount"
+                app:layout_constraintEnd_toStartOf="@+id/header_date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_large"
+                android:text="Customer"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.25"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/header_date"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_customer"
+                app:layout_constraintEnd_toStartOf="@+id/header_order_type"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_large"
+                android:text="Date"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.15"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/header_order_type"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_date"
+                app:layout_constraintEnd_toStartOf="@+id/header_payment_type"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_large"
+                android:text="Order Type"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.15"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/header_payment_type"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_order_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_large"
+                android:text="Payment Type"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.15"
+                android:layout_height="wrap_content" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            tools:listitem="@layout/driver_sales_detail_view"
+            android:id="@+id/salesDetailsRV"
+            app:layout_constraintTop_toBottomOf="@id/header_panel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

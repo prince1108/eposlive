@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Salad",
+    "price": 1.5
+  },
+  {
+    "name": "Tomato",
+    "price": 1.5
+  },
+  {
+    "name": "Lettuce",
+    "price": 1.5
+  },
+  {
+    "name": "Cabbage",
+    "price": 1.5
+  },
+  {
+    "name": "Wrap",
+    "price": 1.5
+  },
+  {
+    "name": "Onion",
+    "price": 1.5
+  },
+  {
+    "name": "Pepper",
+    "price": 1.5
+  },
+  {
+    "name": "Cucumber",
+    "price": 1.5
+  },
+  {
+    "name": "Lemon",
+    "price": 1.5
+  },
+  {
+    "name": "Chilli Sauce",
+    "price": 1.5
+  },
+  {
+    "name": "Burger Sauce",
+    "price": 1.5
+  },
+  {
+    "name": "Mayonnaise",
+    "price": 1.5
+  },
+  {
+    "name": "Well Done",
+    "price": 1.5
+  }
+]

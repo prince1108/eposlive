@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "399735385592",
+    "firebase_url": "https://foodciti-3c791.firebaseio.com",
+    "project_id": "foodciti-3c791",
+    "storage_bucket": "foodciti-3c791.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399735385592:android:98d15215837b1189",
+        "android_client_info": {
+          "package_name": "com.foociti.foodcitipartener"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399735385592-v55e7ktudua21ju7h42566lbd6c7hekm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcI-5YN6muvoyaWjEBmqIYifjXcPDoA7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399735385592-v55e7ktudua21ju7h42566lbd6c7hekm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399735385592:android:0855028d407aa7e9",
+        "android_client_info": {
+          "package_name": "com.foociti.foodcitipartener.production"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399735385592-v55e7ktudua21ju7h42566lbd6c7hekm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcI-5YN6muvoyaWjEBmqIYifjXcPDoA7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399735385592-v55e7ktudua21ju7h42566lbd6c7hekm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

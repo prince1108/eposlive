@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMonsoon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/quFlipToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorBastille">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="227dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toLeftOf="@+id/alert"-->
+        <!--android:background="@drawable/searchbar_background"-->
+        <!--android:gravity="center_vertical">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="23dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:paddingLeft="8dp"-->
+        <!--android:src="@drawable/ic_search" />-->
+
+        <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:hint="@string/hint_search"-->
+        <!--android:inputType="textNoSuggestions"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textColorHint="@color/colorMortar" />-->
+        <!--</LinearLayout>-->
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:background="@drawable/rectangular_btn_shape"
+            android:layout_toLeftOf="@+id/addItemLayout"
+            android:layout_width="230dp"
+            android:layout_height="40dp">
+            <RadioGroup
+                android:id="@+id/internet_status"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:linksClickable="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:buttonTint="@color/colorShamrock"
+                    android:id="@+id/online"
+                    android:text="Online"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:linksClickable="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/offline"
+                    android:text="Offline"
+                    android:buttonTint="@color/colorCarnation"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/addItemLayout"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/alert"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/addItem"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/add_menu_item_background"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Add Manual order"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/alert"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/message"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_alerts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/alert_background"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/message"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/profileName"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/alert_background"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/profile_image"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toLeftOf="@+id/profileName"-->
+        <!--android:src="@android:color/darker_gray" />-->
+
+        <!--<Spinner-->
+        <!--android:id="@+id/profileName"-->
+        <!--android:layout_width="150dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@null"-->
+        <!--android:drawSelectorOnTop="true"-->
+        <!--android:prompt="@string/defaultText" />-->
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toLeftOf="@+id/downArrow"
+            android:text="Mrugesh Thaker"
+            android:textColor="@android:color/white" />
+
+
+        <ImageView
+            android:id="@+id/downArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_down_arrow" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slidingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/quFlipToolBar">
+
+
+        <LinearLayout
+            android:id="@+id/dashBoardMenu"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBastille"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/orderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/orderImage"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_order" />
+
+                    <Button
+                        android:id="@+id/orderButton"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/notification_background"
+                        android:gravity="center"
+                        android:text="NEW"
+                        android:textColor="@android:color/white"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Order \nManagement"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="9dp"
+                    android:background="@drawable/notification_background"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="25"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/inventoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/inventoryImage"
+                        android:layout_width="40dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_inventory" />
+
+                    <Button
+                        android:id="@+id/menuButton"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/notification_background"
+                        android:gravity="center"
+                        android:text="NEW"
+                        android:textColor="@android:color/white"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Inventory \nManagement"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="9dp"
+                    android:background="@drawable/notification_background"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="25"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/menuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/menuImage"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_menu_disable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Menu \nManagement"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settingsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/settingsImage"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Settings"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/orderMatrixLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/orderMatrixImage"
+                    android:layout_width="40dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="Order Matrix"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/mainScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_dashback">
+
+
+            <RelativeLayout
+                android:id="@+id/logOutLayout"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@color/colorMobster7B"
+                android:gravity="center|center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGOUT" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/click"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="26dp"
+                android:background="@color/colorBastille"
+                android:src="@drawable/ic_collapse" />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/profile"
+                        android:layout_centerVertical="true"
+                        android:textSize="16sp"
+                        android:text="Profile"
+                        android:textColor="@color/white"
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/discardChanges"
+                            android:layout_width="180dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorMountainmist"
+                            android:text="DISCARD CHANGES"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                        <Button
+                            android:id="@+id/saveChanges"
+                            android:layout_width="180dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/colorMobster"
+                            android:text="SAVE CHANGES"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_marginTop="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/leftLayout"
+                            android:layout_width="258dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="22dp"
+                            android:layout_marginTop="22dp"
+                            android:background="@color/colorSaltBox"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/logoUpload"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:layout_marginLeft="27dp"
+                                        android:layout_marginTop="17dp"
+                                        android:background="@drawable/background_food_image"
+                                        android:gravity="center">
+
+
+                                        <ImageView
+                                            android:id="@+id/logo"
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/ic_image_upload" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="27dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Logo"
+                                        android:textSize="18sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/imageUpload"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="113dp"
+                                        android:layout_height="90dp"
+                                        android:layout_marginLeft="11dp"
+                                        android:layout_marginTop="17dp"
+                                        android:background="@drawable/background_food_image"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/imageFoodTruck"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:background="@drawable/ic_image_upload" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Foodtruck Image"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <!--    <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginTop="11dp"
+                                    android:lines="2"
+                                    android:text="(Click on the image to change)"
+                                    android:textSize="18sp" />-->
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/opening_time_one"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginTop="36dp"
+                                    android:textColor="@color/white"
+                                    android:text="Opening time (One)"
+                                    android:textSize="16sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/startTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginRight="26dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@color/colorBlackCurrent">
+
+                                    <ImageView
+                                        android:id="@+id/startClock"
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_clock" />
+
+                                    <TextView
+                                        android:id="@+id/startTimeText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_toRightOf="@+id/startClock"
+                                        android:text="09 : 30"
+                                        android:textColor="@color/colorMobster7B"
+                                        android:textSize="16sp" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/closing_time_one"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/white"
+                                    android:text="Closing time (One)"
+                                    android:textSize="16sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/endTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginRight="26dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@color/colorBlackCurrent">
+
+                                    <ImageView
+                                        android:id="@+id/clock"
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_clock" />
+
+                                    <TextView
+                                        android:id="@+id/endTimeText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_toRightOf="@+id/clock"
+                                        android:text="09 : 30"
+                                        android:textColor="@color/colorMobster7B"
+                                        android:textSize="16sp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginTop="60dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/opening_time_two"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="26dp"
+                                    android:textColor="@color/white"
+                                    android:text="Opening time (Two)"
+                                    android:textSize="16sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/startTime_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginRight="26dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@color/colorBlackCurrent">
+
+                                    <ImageView
+                                        android:id="@+id/startClock_"
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_clock" />
+
+                                    <TextView
+                                        android:id="@+id/startTimeText_"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_toRightOf="@+id/startClock_"
+                                        android:text="09 : 30"
+                                        android:textColor="@color/colorMobster7B"
+                                        android:textSize="16sp" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/closing_time_two"
+                                    android:textColor="@color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginTop="16dp"
+                                    android:text="Closing time (Two)"
+                                    android:textSize="16sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/endTime_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_marginRight="26dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@color/colorBlackCurrent">
+
+                                    <ImageView
+                                        android:id="@+id/clock_"
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="5dp"
+                                        android:background="@drawable/ic_clock" />
+
+                                    <TextView
+                                        android:id="@+id/endTimeText_"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_toRightOf="@+id/clock_"
+                                        android:text="09 : 30"
+                                        android:textColor="@color/colorMobster7B"
+                                        android:textSize="16sp" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/accepting_order"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="26dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Accepting Orders"
+                                android:textSize="16sp" />
+
+                            <com.kyleduo.switchbutton.SwitchButton
+                                android:id="@+id/acceptOrder"
+                                style="@style/SwitchButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@android:color/white"
+                                app:kswBackDrawable="@drawable/switch_button_back_drawable"
+                                app:kswBackMeasureRatio="2.8"
+                                app:kswTextOff="Off"
+                                app:kswTextOn="On"
+                                app:kswThumbDrawable="@drawable/switch_button_thumb_drawable"
+                                app:kswThumbHeight="24dp"
+                                app:kswThumbWidth="24dp" />
+
+
+                            <TextView
+                                android:id="@+id/notification_alert"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="26dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Notification Alerts"
+                                android:textSize="16sp" />
+
+                            <com.kyleduo.switchbutton.SwitchButton
+                                android:id="@+id/notifAlert"
+                                style="@style/SwitchButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@android:color/white"
+                                app:kswBackDrawable="@drawable/switch_button_back_drawable"
+                                app:kswBackMeasureRatio="2.8"
+                                app:kswTextOff="Off"
+                                app:kswTextOn="On"
+                                app:kswThumbDrawable="@drawable/switch_button_thumb_drawable"
+                                app:kswThumbHeight="24dp"
+                                app:kswThumbWidth="24dp" />
+                            <TextView
+                                android:id="@+id/delivery_alert"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="26dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Delivery Alerts"
+                                android:textSize="16sp" />
+
+                            <com.kyleduo.switchbutton.SwitchButton
+                                android:id="@+id/delivery"
+                                style="@style/SwitchButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:checked="false"
+                                android:textColor="@android:color/white"
+                                app:kswBackDrawable="@drawable/switch_button_back_drawable"
+                                app:kswBackMeasureRatio="2.8"
+                                app:kswTextOff="Off"
+                                app:kswTextOn="On"
+                                app:kswThumbDrawable="@drawable/switch_button_thumb_drawable"
+                                app:kswThumbHeight="24dp"
+                                app:kswThumbWidth="24dp" />
+                            <TextView
+                                android:id="@+id/collection_alert"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="26dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Pick Up Alerts"
+                                android:textSize="16sp" />
+
+                            <com.kyleduo.switchbutton.SwitchButton
+                                android:id="@+id/collection"
+                                style="@style/SwitchButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="40dp"
+                                android:checked="false"
+                                android:textColor="@android:color/white"
+                                app:kswBackDrawable="@drawable/switch_button_back_drawable"
+                                app:kswBackMeasureRatio="2.8"
+                                app:kswTextOff="Off"
+                                app:kswTextOn="On"
+                                app:kswThumbDrawable="@drawable/switch_button_thumb_drawable"
+                                app:kswThumbHeight="24dp"
+                                app:kswThumbWidth="24dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rightLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="22dp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="22dp"
+                            android:layout_toRightOf="@+id/leftLayout"
+                            android:background="@color/colorSaltBox"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_marginRight="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:baselineAligned="false" android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="22dp"
+                                    android:layout_marginTop="17dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:baselineAligned="false" android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_weight="1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:id="@+id/name_of_restaurant"
+                                                android:textColor="@color/white"
+                                                android:text="name of restaurant"
+                                                android:textAllCaps="true"
+                                                android:textSize="16sp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <EditText
+                                                android:layout_marginTop="10dp"
+                                                android:id="@+id/truckName"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="Restaurent name"
+                                                android:textColorHint="@color/white"
+                                                android:layout_marginRight="50dp"
+                                                android:textColor="@color/white"
+                                                android:textSize="16sp" />
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:id="@+id/tagline"
+                                                android:textColor="@color/white"
+                                                android:text="tagline"
+                                                android:textSize="16sp"
+                                                android:textAllCaps="true"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                            <EditText
+                                                android:layout_marginTop="10dp"
+                                                android:textColorHint="@color/white"
+                                                android:id="@+id/truckTag"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="Restaurent tagline"
+                                                android:textColor="@color/white"
+                                                android:textSize="16sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:baselineAligned="false" android:orientation="horizontal"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:id="@+id/address_of_restaurant"
+                                                android:textColor="@color/white"
+                                                android:text="address of restaurant"
+                                                android:textAllCaps="true"
+                                                android:textSize="16sp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                            <EditText
+                                                android:id="@+id/truckLocation"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                android:hint="Restaurent location"
+                                                android:textColorHint="@color/white"
+                                                android:layout_marginRight="50dp"
+                                                android:textColor="@color/white"
+                                                android:textSize="16sp" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <TextView
+                                                android:id="@+id/pincode"
+                                                android:textColor="@color/white"
+                                                android:text="post code"
+                                                android:textSize="16sp"
+                                                android:textAllCaps="true"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+                                            <EditText
+                                                android:id="@+id/truckPostCode"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                android:hint="Postal Code"
+                                                android:textColorHint="@color/white"
+                                                android:textColor="@color/white"
+                                                android:textSize="16sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:layout_width="380dp"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/text_phone_number"
+                                            android:textColor="@color/white"
+                                            android:text="Phone Number"
+                                            android:textSize="16sp"
+                                            android:textAllCaps="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <EditText
+                                            android:id="@+id/phone_number"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:hint="phone number"
+                                            android:textColorHint="@color/white"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="22dp"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/cusines_you_serve"
+                                    android:text="cusines you serve"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <LinearLayout
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/cusineList"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_above="@+id/dottedLineOne"
+                                        android:paddingBottom="10dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingTop="10dp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/categories"
+                                        android:text="categories"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"
+                                        android:textAllCaps="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <LinearLayout
+                                        android:layout_marginTop="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <android.support.v7.widget.RecyclerView
+                                            android:id="@+id/categoryList"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_above="@+id/dottedLineOne"
+                                            android:paddingBottom="10dp"
+                                            android:paddingRight="10dp"
+                                            android:paddingTop="10dp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:baselineAligned="false" android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/discount_on_the_store"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/white"
+                                        android:text="add a discount on the store"
+                                        android:textAllCaps="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <RelativeLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/percent"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:text="%"
+                                            android:textSize="16sp"
+                                            android:textColor="@color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <EditText
+                                            android:id="@+id/discount"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textColorHint="@color/white"
+                                            android:hint="0"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="number"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="100dp"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/limit_orders_to"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/white"
+                                        android:text="limit orders to"
+                                        android:textAllCaps="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <RelativeLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/miles"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:text="Miles"
+                                            android:textSize="16sp"
+                                            android:textColor="@color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <EditText
+                                            android:layout_marginTop="10dp"
+                                            android:id="@+id/truckDistance"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:textColorHint="@color/white"
+                                            android:hint="0"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="number"
+                                            android:lines="1"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:baselineAligned="false" android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/minimum_order_value"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/white"
+                                        android:text="Minimum order value"
+                                        android:textAllCaps="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <RelativeLayout
+                                        android:layout_marginBottom="40dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_marginTop="5dp"
+                                            android:layout_alignParentRight="true"
+                                            android:text="(£)"
+                                            android:textSize="16sp"
+                                            android:textColor="@color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                        <EditText
+                                            android:lines="1"
+                                            android:inputType="number"
+                                            android:id="@+id/minimum_value"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:layout_alignParentEnd="true"
+                                            
+                                            android:hint="0"
+                                            android:imeOptions="actionDone"
+                                            android:textColor="@color/white"
+                                            android:textColorHint="@color/white"
+                                            android:textSize="16sp" />
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="100dp"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="vertical"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/text_delivery_charges"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/white"
+                                        android:text="Delivery Charges"
+                                        android:textAllCaps="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                    <RelativeLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:id="@+id/pound_symbol"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_alignParentRight="true"
+                                            android:text="(£)"
+                                            android:textSize="16sp"
+                                            android:textColor="@color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+                                        <EditText
+                                            android:layout_marginTop="10dp"
+                                            android:id="@+id/delivery_charges"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:textColorHint="@color/white"
+                                            android:hint="0"
+                                            android:imeOptions="actionDone"
+                                            android:inputType="number"
+                                            android:lines="1"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/progressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/progressBar2" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </android.support.v4.widget.SlidingPaneLayout>
+
+
+
+</RelativeLayout>
+
+

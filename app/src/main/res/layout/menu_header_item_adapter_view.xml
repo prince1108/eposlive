@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/menu_category_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_header_bg" >
+
+        <!--<Switch
+            android:id="@+id/category_on_off"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />-->
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/category_on_off"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:kswBackDrawable="@drawable/switch_button_back_drawable"
+            app:kswBackMeasureRatio="2.8"
+            app:kswTextOff="Offline"
+            app:kswTextOn="Online"
+            android:textSize="16sp"
+            app:kswThumbDrawable="@drawable/switch_button_thumb_drawable"
+            app:kswThumbHeight="40dp"
+            app:kswThumbWidth="40dp" />
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kebabs"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/comfortaabold"
+            android:layout_toLeftOf="@id/category_on_off"/>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/menu_items_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_below="@id/menu_category_rl">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

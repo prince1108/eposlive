@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:activity=".activities.SendMessageActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/dark_blue"
+        android:id="@+id/topContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="0.1"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/filter_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Send Messages"
+            android:textSize="@dimen/text_extra_large2"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel_white_60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filter_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.15"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@id/body"
+        app:layout_constraintTop_toBottomOf="@id/topContainer">
+
+        <!--<RadioGroup
+            android:id="@+id/options"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/totalRecords"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/show_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@drawable/dark_rectangular_radio_btn"
+                android:button="@null"
+                android:padding="8dp"
+                android:text="All Customer"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_extra_large2" />
+
+            <RadioButton
+                android:id="@+id/show_last_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@drawable/dark_rectangular_radio_btn"
+                android:button="@null"
+                android:padding="8dp"
+                android:text="last 3 months"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_extra_large2" />
+
+            <RadioButton
+                android:id="@+id/Number_start"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@drawable/dark_rectangular_radio_btn"
+                android:button="@null"
+                android:padding="8dp"
+                android:text="starts with 07"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_extra_large2" />
+
+            <RadioButton
+                android:id="@+id/last_five"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="@drawable/dark_rectangular_radio_btn"
+                android:button="@null"
+                android:padding="8dp"
+                android:text="Last 5 orders"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_extra_large2" />
+        </RadioGroup>-->
+        <EditText
+            android:layout_marginRight="5dp"
+            android:id="@+id/startDateET"
+            android:editable="false"
+            android:focusable="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/endDateET"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/horizontalGuide"
+            android:hint="Start Date"
+            android:background="@drawable/rectangular_shape"
+            android:padding="8dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.2"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginRight="5dp"
+            android:id="@+id/endDateET"
+            android:focusable="false"
+            android:editable="false"
+            app:layout_constraintStart_toEndOf="@id/startDateET"
+            app:layout_constraintEnd_toStartOf="@id/startsWithNoET"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/horizontalGuide"
+            android:hint="End Date"
+            android:background="@drawable/rectangular_shape"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.2"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginRight="5dp"
+            android:id="@+id/startsWithNoET"
+            app:layout_constraintStart_toEndOf="@id/endDateET"
+            app:layout_constraintEnd_toStartOf="@id/orderCountET"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/horizontalGuide"
+            android:hint="Starts with Number"
+            android:inputType="number"
+            android:background="@drawable/rectangular_shape"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.2"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginRight="5dp"
+            android:id="@+id/orderCountET"
+            app:layout_constraintStart_toEndOf="@id/startsWithNoET"
+            app:layout_constraintEnd_toStartOf="@id/filter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/horizontalGuide"
+            android:hint="Order Count"
+            android:inputType="number"
+            android:background="@drawable/rectangular_shape"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.15"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginRight="5dp"
+            android:id="@+id/filter"
+            app:layout_constraintStart_toEndOf="@id/orderCountET"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/clearFilter"
+            app:layout_constraintBottom_toTopOf="@id/horizontalGuide"
+            android:text="Filter"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/dark_gray_rectangular_btn"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.15"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/clearFilter"
+            app:layout_constraintStart_toEndOf="@id/filter"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/horizontalGuide"
+            android:text="Clear Filter"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/dark_gray_rectangular_btn"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.15"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontalGuide"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/totalRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_large"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontalGuide" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/body"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filter_container"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header_container"
+            android:background="@color/dark_gray_gradientStart"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header_customer_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/header_mobile"
+                android:text="Customer Info"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="0.5"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/header_mobile"
+                app:layout_constraintStart_toEndOf="@+id/header_customer_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/header_statusTxt"
+                android:layout_width="0dp"
+                android:text="Mobile"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_weight="0.3"
+                android:layout_height="wrap_content"/>
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_mobile"
+                app:layout_constraintEnd_toStartOf="@id/header_check"
+                android:id="@+id/header_statusTxt"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.1"
+                android:text="Message Status"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/header_statusTxt"
+                android:buttonTint="@color/white"
+                android:id="@+id/header_check"
+                android:text="Select All"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="0.1"
+                android:layout_height="wrap_content" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintTop_toBottomOf="@id/header_container"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/customerRecycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/view_message_customer_layout" />
+
+        <ProgressBar
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/dark_gray_rectangular_btn"
+        android:padding="15dp"
+        android:text="Send Message"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

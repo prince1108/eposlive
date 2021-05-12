@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_panel"
+        android:padding="8dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/body"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="0.2"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Persons"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/close"
+            android:src="@drawable/ic_cancel_white_60dp"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--  <androidx.recyclerview.widget.RecyclerView
+          android:layout_margin="16dp"
+          app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+          app:spanCount="4"
+          android:id="@+id/countRV"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/top_panel"
+          app:layout_constraintVertical_weight="0.8"
+          tools:listitem="@layout/person_per_table_view" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/body"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_panel"
+        app:layout_constraintVertical_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/counter_panel"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="0.2"
+            app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.foodciti.foodcitipartener.compound_views.CounterBox
+                android:layout_margin="5dp"
+                android:id="@+id/counterBox"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="0.67"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_extra_large"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:id="@+id/submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintStart_toEndOf="@id/counterBox"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintVertical_weight="0.8"
+            android:id="@+id/bottom_panel"
+            app:layout_constraintTop_toBottomOf="@id/counter_panel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="1"
+                app:layout_constraintVertical_chainStyle="spread"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/count_2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/count_4"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="4"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/count_5"
+                app:layout_constraintTop_toBottomOf="@id/count_1"
+                app:layout_constraintBottom_toTopOf="@+id/count_7"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_4"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="7"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/count_8"
+                app:layout_constraintTop_toBottomOf="@id/count_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_7"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="2"
+                app:layout_constraintVertical_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@id/count_1"
+                app:layout_constraintEnd_toStartOf="@+id/count_3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/count_5"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="5"
+                app:layout_constraintStart_toEndOf="@id/count_4"
+                app:layout_constraintEnd_toStartOf="@+id/count_6"
+                app:layout_constraintTop_toBottomOf="@id/count_2"
+                app:layout_constraintBottom_toTopOf="@+id/count_8"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_5"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="8"
+                app:layout_constraintStart_toEndOf="@id/count_7"
+                app:layout_constraintEnd_toStartOf="@+id/count_9"
+                app:layout_constraintTop_toBottomOf="@id/count_5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_8"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="3"
+                app:layout_constraintVertical_chainStyle="spread"
+                app:layout_constraintStart_toEndOf="@id/count_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/count_6"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="6"
+                app:layout_constraintStart_toEndOf="@id/count_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/count_3"
+                app:layout_constraintBottom_toTopOf="@+id/count_9"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_6"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_rectangular_btn"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_extra_large"
+                android:gravity="center"
+                android:text="9"
+                app:layout_constraintStart_toEndOf="@id/count_8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/count_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="0.33"
+                app:layout_constraintVertical_weight="0.33"
+                android:id="@+id/count_9"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <com.foodciti.foodcitipartener.compound_views.CounterBox
+        app:layout_constraintTop_toBottomOf="@id/top_panel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/personCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/personCounter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Normal"
+  },
+  {
+    "type": "Payment Issue"
+  },
+  {
+    "type": "Wrong OrderDetails"
+  },
+  {
+    "type": "Got Gift"
+  },
+  {
+    "type": "Other"
+  }
+]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="105dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="95dp"
+    android:background="@drawable/rectangular_shape_keyboard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="A"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/button"
+        android:id="@+id/tv_textInput"
+        android:gravity="center"
+        android:textSize="35px"
+
+        android:textColor="#000000" />
+</RelativeLayout>

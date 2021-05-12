@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/message_layout"
+        android:layout_marginTop="5dp"
+        android:weightSum="8"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_extra_large2"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/user"
+                android:visibility="gone"
+                android:background="@drawable/driver" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/user"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customer_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="20dp"
+                    android:text="Name"
+                    android:textSize="@dimen/text_extra_large2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="mobile"
+                    android:textSize="@dimen/text_large"
+                    android:id="@+id/customer_mobile" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:buttonTint="@android:color/black"
+                android:layout_marginRight="@dimen/view_padding_20"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/statusTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="paid"
+                android:layout_below="@id/checkbox"
+                android:layout_marginRight="@dimen/view_padding_20"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/coloGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

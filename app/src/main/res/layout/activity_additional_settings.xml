@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdditionalSettings">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/form_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="0.6">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="Cash Drawer Settings"
+                android:textSize="@dimen/text_extra_large"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/titleET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <CheckBox
+                android:id="@+id/titleET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Cash Paind"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@id/nameET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/heading"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Company Name"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@id/telET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleET"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/telET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Telephone"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@id/pinET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameET"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/pinET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Postcode"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@id/addressET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/telET"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/addressET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Address Line 1"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@id/addressET2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pinET"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/addressET2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Address Line 2 (Optional)"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@id/vatNoET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addressET"
+                app:layout_constraintWidth_percent="0.6" />
+            <!--<EditText
+            android:background="@drawable/rectangular_shape"
+            android:padding="8dp"
+            android:id="@+id/addressET3"
+            android:hint="Address Line 3 (Optional)"
+            app:layout_constraintTop_toBottomOf="@id/addressET2"
+            app:layout_constraintBottom_toTopOf="@id/vatNoET"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.6"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"/>-->
+            <EditText
+                android:id="@+id/vatNoET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Vat No (Optional)"
+                android:padding="8dp"
+                app:layout_constraintBottom_toTopOf="@id/companyNoET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addressET2"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/companyNoET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Company No (Optional)"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vatNoET"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/adminPassET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Admin Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/optInHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/companyNoET"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <EditText
+                android:id="@+id/optInHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rectangular_shape"
+                android:hint="Go Back To Home After CheckOut(Yes/No)"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adminPassET"
+                app:layout_constraintWidth_percent="0.6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.foodciti.foodcitipartener.keyboards.ExtendedKeyBoard
+        android:id="@+id/keyBoard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:keyTextSize="@dimen/text_extra_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll"
+        app:layout_constraintVertical_weight="0.4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

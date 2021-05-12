@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/payment_paypal_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorMartinique"
+        android:text="@string/paypal_accepted"
+        android:padding="30dp"
+        android:fontFamily="@font/comfortaabold"
+        android:layout_toLeftOf="@+id/payment_paypal_switch"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/payment_paypal_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_switch_bg"
+        android:layout_alignParentEnd="true"
+        
+        android:layout_alignTop="@id/payment_paypal_tv"
+        android:layout_alignBottom="@id/payment_paypal_tv"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:id="@+id/payment_cash_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorMartinique"
+        android:text="@string/pay_by_cash"
+        android:padding="30dp"
+        android:fontFamily="@font/comfortaabold"
+        android:layout_toLeftOf="@+id/payment_cash_switch"
+        android:layout_below="@id/payment_paypal_tv" />
+
+    <ImageView
+        android:id="@+id/payment_cash_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_switch_bg"
+        android:layout_alignParentEnd="true"
+        
+        android:layout_alignTop="@id/payment_cash_tv"
+        android:layout_alignBottom="@id/payment_cash_tv"
+        android:paddingRight="20dp" />
+
+
+    <TextView
+        android:id="@+id/payment_card_delivery_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorMartinique"
+        android:text="@string/pay_by_card_delivery"
+        android:padding="30dp"
+        android:fontFamily="@font/comfortaabold"
+        android:layout_toLeftOf="@+id/payment_card_delivery_switch"
+        android:layout_below="@id/payment_cash_tv" />
+
+    <ImageView
+        android:id="@+id/payment_card_delivery_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_switch_bg"
+        android:layout_alignParentEnd="true"
+        
+        android:layout_alignTop="@id/payment_card_delivery_tv"
+        android:layout_alignBottom="@id/payment_card_delivery_tv"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:id="@+id/payment_card_collection_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorMartinique"
+        android:text="@string/pay_by_card_collection"
+        android:padding="30dp"
+        android:fontFamily="@font/comfortaabold"
+        android:layout_toLeftOf="@+id/payment_card_collection_switch"
+        android:layout_below="@id/payment_card_delivery_tv"/>
+
+    <ImageView
+        android:id="@+id/payment_card_collection_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_switch_bg"
+        android:layout_alignParentEnd="true"
+        
+        android:layout_alignTop="@id/payment_card_collection_tv"
+        android:layout_alignBottom="@id/payment_card_collection_tv"
+        android:paddingRight="20dp" />
+
+
+    <TextView
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:fontFamily="@font/comfortaabold"
+        android:textAllCaps="true"
+        android:padding="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

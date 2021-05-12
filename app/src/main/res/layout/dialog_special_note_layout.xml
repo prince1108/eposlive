@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="8dp"
+        android:id="@+id/top_panel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/houseNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/dark_blue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="0.1">
+
+        <TextView
+            android:text="Special Note"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_extra_large"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/close"
+            android:src="@drawable/ic_cancel_white_60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:layout_margin="16dp"
+        android:background="@drawable/rectangular_shape_transparent"
+        android:focusable="true"
+        android:cursorVisible="true"
+        android:id="@+id/houseNo"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorBlack"
+        android:hint="Write here .. ... "
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:gravity="top|left"
+        android:paddingTop="@dimen/padd_10"
+        android:inputType="textMultiLine|textCapCharacters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_panel"
+        app:layout_constraintBottom_toTopOf="@id/keyBoard"
+        app:layout_constraintVertical_weight="0.3"
+        android:layout_width="0dp"
+        android:scrollbars="vertical"
+        android:layout_height="0dp" />
+
+    <com.foodciti.foodcitipartener.keyboards.ExtendedKeyBoard
+        app:keyTextSize="@dimen/text_extra_large"
+        android:id="@+id/keyBoard"
+        app:layout_constraintTop_toBottomOf="@id/houseNo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_weight="0.6"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

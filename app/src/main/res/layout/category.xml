@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/category_clickable"
+    android:layout_margin="1dp">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/category_name"
+            android:textStyle="bold"
+            android:text="Large kebab"
+            android:textSize="@dimen/text_large"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/padd_10"
+            android:paddingBottom="@dimen/padd_10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:id="@+id/counter"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="1"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"
+                android:background="@drawable/black_circle"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

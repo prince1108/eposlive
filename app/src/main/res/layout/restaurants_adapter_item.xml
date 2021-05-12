@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/res_selector"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        
+        android:padding="10dp"
+        android:src="@drawable/restaurant_selector_drawable"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaaregular"
+        
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        
+        android:layout_toStartOf="@id/res_selector" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/res_selector" />
+</RelativeLayout>

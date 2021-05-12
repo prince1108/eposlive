@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_gray"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16dp"
+        android:id="@+id/header_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/name"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/s_no"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="S.No"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/s_no"
+            app:layout_constraintEnd_toStartOf="@id/hex_code"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/name"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/name"
+            app:layout_constraintEnd_toStartOf="@id/delete"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/hex_code"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Hex Code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <!--<androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/hex_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/edit_delete"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/delete"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="0.5"
+                android:src="@drawable/ic_edit_white_24dp"
+                android:id="@+id/edit"
+                android:adjustViewBounds="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+            <ImageView
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0.5"
+                android:src="@drawable/ic_delete_forever_white_24dp"
+                android:id="@+id/delete"
+                android:adjustViewBounds="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/hex_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:src="@drawable/ic_delete_forever_white_24dp"
+            android:id="@+id/delete"
+            android:adjustViewBounds="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

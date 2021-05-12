@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="28dp"
+            android:id="@+id/order_type"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/comfortaabold"/>
+
+        <TextView
+            android:layout_width="55dp"
+            android:background="@drawable/delete"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/close_dialog"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="65dp"
+            android:layout_height="55dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:id="@+id/fifteen"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="15 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/three_0"
+                android:background="@drawable/time_dialog_background_gray"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="30 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:id="@+id/four_5"
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="45 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/time_dialog_background_gray"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:id="@+id/six_0"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="60 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginLeft="65dp"
+                android:id="@+id/seven_5"
+                android:visibility="gone"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="75 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/nine_0"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/time_dialog_background_gray"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="90 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:id="@+id/one_05"
+                android:visibility="gone"
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="105 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@drawable/time_dialog_background_gray"
+                android:layout_marginLeft="65dp"
+                android:id="@+id/one_20"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="120 Min"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@drawable/time_dialog_background"
+                android:layout_marginLeft="65dp"
+                android:id="@+id/one_35"
+                android:layout_marginRight="65dp"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="135 Min"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:visibility="invisible" />
+
+</LinearLayout>

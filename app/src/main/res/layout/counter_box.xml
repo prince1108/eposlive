@@ -1,0 +1,36 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+
+    <Button
+        android:background="@drawable/dark_gray_rectangular_btn"
+        android:textColor="@color/white"
+        android:id="@+id/decrement"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:text="-"
+        android:textSize="@dimen/text_extra_large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="gravity"
+        android:textSize="@dimen/text_extra_large"
+        android:textStyle="bold" />
+
+    <Button
+        android:background="@drawable/dark_gray_rectangular_btn"
+        android:textColor="@color/white"
+        android:id="@+id/increment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:text="+"
+        android:textSize="@dimen/text_extra_large"
+        android:textStyle="bold" />
+</merge>

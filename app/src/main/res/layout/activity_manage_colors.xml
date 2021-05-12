@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ManageColorsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_panel"
+        android:background="@color/dark_blue"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/title"
+            android:text="Manage Colors"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_extra_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_cancel_white_60dp"
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="16dp"
+        android:id="@+id/header_container"
+        android:background="@color/dark_gray_gradientStart"
+        app:layout_constraintTop_toBottomOf="@id/top_panel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/header_name"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/header_s_no"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="S.No"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_s_no"
+            app:layout_constraintEnd_toStartOf="@id/header_hex_code"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/header_name"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_name"
+            app:layout_constraintEnd_toStartOf="@id/header_edit_delete"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/header_hex_code"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Hex Code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_hex_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.25"
+            android:id="@+id/header_edit_delete"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Edit/Delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/header_container"
+        app:layout_constraintBottom_toTopOf="@+id/addColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/view_manage_color_layout"
+        android:id="@+id/colorRV"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <Button
+        android:layout_margin="16dp"
+        android:background="@drawable/dark_gray_rectangular_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:text="Add Color"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_large"
+        android:id="@+id/addColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

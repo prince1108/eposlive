@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/itemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:background="@drawable/background_item_quantity"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:id="@+id/itemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/comfortaaregular"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/itemQuantity" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/subItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        
+        android:layout_marginStart="60dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorEcstasy" />
+
+</LinearLayout>

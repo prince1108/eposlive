@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_dashback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="282dp"
+                    android:layout_height="274dp"
+                    android:background="@color/colorMobster7B"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+
+                    <EditText
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/background_edittext_login"
+                        android:hint="Email"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlackCurrent"
+                        android:textColorHint="@color/colorBlackCurrent"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/userName"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/background_edittext_login"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlackCurrent"
+                        android:textColorHint="@color/colorBlackCurrent"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/forgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/password"
+                        android:layout_marginTop="16dp"
+                        android:text="Forgot Password"
+                        android:textSize="16sp" />
+
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/forgotPassword"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="27dp"
+                        android:background="@color/colorBlackCurrent"
+                        android:gravity="center_vertical|center"
+                        android:text="LOGIN"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorMobster7B"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/createAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/loginButton"
+                        android:layout_gravity="center"
+                        android:text="Create account"
+                        android:textAllCaps="true"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/bottomText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Powered by"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorMobster7B"
+                    android:textSize="15sp" />
+                <TextView
+                    android:text="FoodCiti"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/bottomText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+               <!-- <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="19dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/bottomText"
+                    android:background="@drawable/ic_quflip" />-->
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

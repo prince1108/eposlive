@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DiscountView">
+        <attr name="textsize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ExtendedKeyBoard">
+        <attr name="keyTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

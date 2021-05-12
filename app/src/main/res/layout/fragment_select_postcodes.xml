@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SelectPostcodes">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="16dp"
+        android:background="@color/dark_gray_gradientStart"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/header_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/header_postcode_pattern"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="PostCode Pattern"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/header_city"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="0.33"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/header_city"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/header_postcode_pattern"
+            app:layout_constraintEnd_toStartOf="@id/select"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.33"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/select"
+            app:layout_constraintStart_toEndOf="@id/header_city"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Select/Unselect All"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_width="0dp"
+            app:layout_constraintHorizontal_weight="0.33"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectPostcodesRV"
+        app:layout_constraintTop_toBottomOf="@id/header_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/layout_setpostcode_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <Button
+        android:id="@+id/setPostcodes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Set Postcodes"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/dark_gray_rectangular_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
